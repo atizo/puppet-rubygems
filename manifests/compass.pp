@@ -1,5 +1,5 @@
 class rubygems::compass {
-  rubygems::devel
+  include rubygems::devel
   package{'compass':
     ensure => present,
     provider => gem,
