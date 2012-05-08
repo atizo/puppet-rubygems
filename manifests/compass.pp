@@ -1,7 +1,7 @@
-class rubygems::compass {
+class rubygems::compass($version = present) {
   include rubygems::devel
   package{'compass':
-    ensure => present,
+    ensure => $version,
     provider => gem,
   }
 }
